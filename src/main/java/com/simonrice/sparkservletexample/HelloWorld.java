@@ -9,6 +9,14 @@ import spark.servlet.SparkApplication;
 public class HelloWorld implements SparkApplication {
 	@Override
 	public void init() {
+		Spark.get(new Route("/") {
+			@Override
+			public Object handle(Request request, Response response) {
+				response.redirect("/hello");
+				return null;
+			}
+		});
+		
 		Spark.get(new Route("/hello") {
 			@Override
 			public Object handle(Request request, Response response) {
