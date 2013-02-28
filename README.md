@@ -1,5 +1,7 @@
 # Spark Servlet Example
 
+[![Build Status](https://travis-ci.org/simonrice/SparkServletExample.png)](https://travis-ci.org/simonrice/SparkServletExample)
+
 This is a simple example of a Spark (Java Micro MVC Framework) application running in a servlet container, namely Jetty.  It is fully set up to run on Heroku, & you can view it running at http://spark-servlet.herokuapp.com/.
 
 ## Running Locally
