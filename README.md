@@ -2,11 +2,20 @@
 
 [![Build Status](https://travis-ci.org/simonrice/SparkServletExample.png)](https://travis-ci.org/simonrice/SparkServletExample)
 
-This is a simple example of a Spark (Java Micro MVC Framework) application running in a servlet container, namely Jetty.  It is fully set up to run on Heroku, & you can view it running at http://spark-servlet.herokuapp.com/.
+This is a simple example of a Spark (Java Micro MVC Framework) application running in a Tomcat container.
+
+Spark "official" container is Jetty and this example is to show how to run it in Tomcat.
+
+This example has been checked to run correctly on
+
+- Tomcat 8
+- Java 8
 
 ## Running Locally
 
-The easiest way to run the example is to type `mvn jetty:run` in the terminal.  Alternatively, you can use the same Jetty runner that is used on Heroku by typing in `java -jar target/dependency/jetty-runner.jar target/*.war`.
+The easiest way to run the example is to type `mvn clean package` in the terminal.
+
+You will get a `target/sparkServletExample.war` that you will deploy either by uploading it through the web interface or by copying it to the `webapps/` directory.
 
 ## Contributions
 
