@@ -18,26 +18,23 @@ import spark.Spark;
 import spark.servlet.SparkApplication;
 
 public class HelloWorld implements SparkApplication {
-    // public static void main(String[] args){
-    // 	SparkApplication app = new HelloWorld();
-    // 	app.init();		
-    // }
     @Override
     public void init() {
-        Spark.get("/", (Request request, Response response) -> {
-                response.redirect("/sparkServletExample/hello");
-                return null;
+        
+        Spark.get("/",
+                  (Request request, Response response) -> {
+                      response.redirect("/sparkServletExample/hello");
+                      return null;
             });
         
         Spark.get("/hello",
                   (Request request, Response response) -> {
                       return "Hello World!";
-                  }
-                  );
+                  });
+        
         Spark.get("/hello/:name",
                   (Request request, Response response) -> {
                       return  String.format("Hello, %s!", request.params(":name"));
-                          }
-                  );
+                  });
     }
 }
