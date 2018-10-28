@@ -1,6 +1,6 @@
 # Spark Servlet Example
 
-[![Build Status](https://travis-ci.org/simonrice/SparkServletExample.png)](https://travis-ci.org/simonrice/SparkServletExample)
+[![Build Status](https://travis-ci.org/simonrice/SparkServletExample.svg)](https://travis-ci.org/simonrice/SparkServletExample)
 
 This is a simple example of a Spark (Java Micro MVC Framework) application running in a Tomcat container.
 
